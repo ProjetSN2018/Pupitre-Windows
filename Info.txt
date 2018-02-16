@@ -1,0 +1,9 @@
+14/02	- Création du projet
+		- Déclaration des métodes de la classe CDlg (OnClicked..)
+			+ Déclaration des attributs de CDlg + Initialisation (m_pRD_...)
+
+15/02	- Implémentation de la méthode OnClickedStop (Disabled bt P1&P2)
+
+16/02	- Création de la classe CDoor
+			+ Attributs (State, Pos : bool)
+			+ Setters

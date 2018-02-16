@@ -1,9 +1,8 @@
-
 // CDlg.h : fichier d'en-tête
 //
 
 #pragma once
-
+#include "CDoor.h"
 
 // boîte de dialogue CDlg
 class CDlg : public CDialogEx
@@ -24,14 +23,23 @@ public:
 // Implémentation
 
 private:
-	CButton* m_pRD_STOP;
-	CButton* m_pRD_CLOSE;
-	CButton* m_pRD_CTRL;
-	CButton* m_pRD_FREE;
-	CButton* m_pRD_URGENCY;
 
-	CButton* m_pBT_P1;
-	CButton* m_pBT_P2;
+	CDoor	m_Door1;
+	CDoor	m_Door2;
+
+	CButton*	m_pRD_STOP;
+	CButton*	m_pRD_CLOSE;
+	CButton*	m_pRD_CTRL;
+	CButton*	m_pRD_FREE;
+	CButton*	m_pRD_URGENCY;
+
+	CButton*	m_pBT_P1;
+	CButton*	m_pBT_P2;
+	CButton*	m_pBT_DENY;
+
+	CEdit*		m_pED_LOG;
+	CStatic*	m_pST_LOG;
+
 	
 protected:
 	HICON m_hIcon;
@@ -43,11 +51,11 @@ protected:
 	DECLARE_MESSAGE_MAP()
 public:
 	virtual void OnCancel();
+	afx_msg void OnBnClickedRdStop();
+	afx_msg void OnBnClickedRdClose();
 	afx_msg void OnBnClickedRdCtrl();
 	afx_msg void OnBnClickedRdFree();
 	afx_msg void OnBnClickedRdUrgency();
-	afx_msg void OnBnClickedBtP1();
-	afx_msg void OnBnClickedBtP2();
-	afx_msg void OnBnClickedRdStop();
-	afx_msg void OnBnClickedRdClose();
+	afx_msg void OnBnClickedBtD1();
+	afx_msg void OnBnClickedBtD2();
 };
