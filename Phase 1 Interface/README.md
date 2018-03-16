@@ -1,2 +1,0 @@
-# Pupitre-Windows
-Pupitre windows
